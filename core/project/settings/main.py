@@ -14,6 +14,17 @@ from pathlib import Path
 
 import environ
 
+"""
+Если нужно изменить для тестирования какие-либо настройки можно создать в этой же директории local.py 
+
+from .main import *
+
+... <------ Ваши изменения
+
+И в manage.py указать путь до этого файла
+
+"""
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 
